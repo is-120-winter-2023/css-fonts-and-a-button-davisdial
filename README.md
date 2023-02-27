@@ -181,7 +181,7 @@ The default styling for `<a>` elements includes an underline and usually a blue 
 Add CSS in your `styles/main.css` file (below the resets) to remove the underline by overriding the default styling of the `a` selector. Give links a color using one of your CSS color variables.
 
 Finally, add a `:hover` pseudo-class to style links when the user hovers over them. Observe how some of the websites you visit frequently style their links. You can use a different color for the hover state, or you can use the same color and add an underline.
-| ⚠️ "Dead" links and hover states                                                                                                                                                      |
+| ⚠️ "Dead" links and hover states                                                                                                                                                      
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | You don't want dead links (links without an `href` attribute) to look like active links by having a hover state. Write a `:hover` selector that targets only links with an `href` attribute. **HINT**: `a[href]:hover`.  |
 

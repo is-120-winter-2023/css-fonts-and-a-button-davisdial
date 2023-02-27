@@ -1,0 +1,168 @@
+/*****************************************************/
+/* This semester we will be using my variation of    */
+/* Josh Comeau's CSS Reset instead of normalize      */
+/* Read more at                                      */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*****************************************************/
+/* Always add your CSS below the reset CSS           */
+/*****************************************************/
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  * margin: 0; *
+  /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* until you get a feel for overflow, I'll keep these next two commented out */
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} */
+
+/* p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+} */
+
+/* temp CSS for HTML only assignments */
+picture img {
+  width: 100%;
+}
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
+
+/************ add your CSS here *****************/
+
+:root {
+  --color-font: rgb(38, 38, 38);
+  --color-primary: #4229e8;      
+  --color-secondary: #d079c9;   
+  --color-accent: #f36a1b;       
+  --color-accent-light: #f1cfb0;
+  background-color:#f1cfb0;
+}
+h1 {
+  font-family: 'VT323', monospace;
+  color:var(--color-font);
+  font-weight: 200;
+  font-size: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+h2 {
+  font-family: 'DM Serif Display', serif;
+  color:var(--color-font);
+  font-weight: 200;
+  font-size: 3rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+p {
+  font-family: 'VT323', monospace;
+  color:var(--color-font);
+  font-weight: 200;
+  font-size: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.button h2 a {
+  color: #d079c9;
+}
+
+.button > a {
+  position: relative;
+  padding: 15px 30px;
+  margin: 0 1rem 1rem;
+  border: 2px solid #d079c9;
+  transition: color 1s cubic-bezier(0.25, 1, 0.25, 1),
+    background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+.button > a span {
+  font-size: 14px;
+  font-weight: bold;
+  color:#d079c9;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button > a:hover span {
+  position: relative;
+  z-index: 1;
+  color: #000;
+}
+
+.img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
