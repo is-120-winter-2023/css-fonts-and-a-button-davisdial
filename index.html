@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SYNTHESIS</title>
-    <link href="css/styles1.CSS" rel="stylesheet">
+    <!-- <link href="css/styles1.CSS" rel="stylesheet"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
@@ -18,27 +18,31 @@
 </head>
 <body>
     <picture>
-        <source media="(min-width:769px)" srcset="images/hero_laptop.png">
+        <source media="(min-width:769`px)" srcset="images/hero_laptop.png">
         <source media="(min-width:381px)" srcset="images/hero_tablet.png">
         <source media="(min-width:380px)" srcset="images/hero_mobile.png">
         <img src="images/hero_laptop.png" alt="eror">
     </picture>
     <header><nav>
-        <ul><a href="about/index.html">About</a>
-            <a href="contact/index.html">Contact</a></ul>
+        <ul><a class="button" href="about/index.html">About</a>
+            <a class="button" href="contact/index.html">Contact</a></ul>
     </nav></header>
-    <h1>SYNTHESIS</h1>
+    <h1 class="animation" aria-label="SYNTHESIS">
+    <span aria-hidden="true">S</span><span aria-hidden="true">Y</span><span aria-hidden="true">N</span><span aria-hidden="true">T</span><span aria-hidden="true">H</span><span aria-hidden="true">E</span><span aria-hidden="true">S</span><span aria-hidden="true">I</span><span aria-hidden="true">S</span>
+    </h1>
 <main>
     <article>
         <h2>Who doesn't like cool looking pianos?</h2>
     <p>A synthesizer is an electronic musical instrument that generates audio signals. Synthesizers typically create sounds by generating waveforms through methods including subtractive synthesis, additive synthesis and frequency modulation synthesis.</p>
-    <a link href="#" class="button">Learn More</a>
+    <!-- <a link href="#" button type="button">Learn More</a> -->
+    <a class="button" href="#">Learn More</a>
+    <!-- <button type="button" href="#" class="button">Learn More</button> -->
 </article>
 <strong>LOREM IPSUM</strong>
 <article>
     <h2>Yeah, that's pretty awesome</h2>
 <p>John Lennon used to go over to his friend's house where a synthesizer was and spend hours messing about on it!</p>
-<figure><img src="dial000708-r1-005-1 copy.jpg" class="img" width="900px" alt="awww">
+<figure><img src="dial000708-r1-005-1 copy.jpg" class="img" width="900" alt="awww">
     <figcaption>This is me and some organs XD</figcaption>
 </figure>
 </article>
@@ -50,9 +54,9 @@
 <p>wow we have some visual work to do!
     For my site I intend to explore the visually and sonically beautiful world of electronic synthesizers. Specifically, synthesizers dating back to the 60’s, 70’s, and 80’s where their components remained completely analog. I hope to display and inform in a way that pays proper homage to an aspect of music that is underappreciated.
 </p></aside>
-        <img src="images/IMG_5171.jpeg" width="900px" class="img" alt="SUPERwoman">
+        <img src="images/IMG_5171.jpeg" width="900" class="img" alt="SUPERwoman">
 <footer><p>this is my foot. call me footer XD
-    <img src="images/Rm0109- 5.svg">
+    <img src="images/Rm0109- 5.svg" alt="awww man">
 </p></footer>
 </body>
 </html>
