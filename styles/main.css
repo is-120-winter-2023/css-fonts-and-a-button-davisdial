@@ -92,13 +92,23 @@ img[src$="svg"] {
   --color-secondary: #d079c9;   
   --color-accent: #f36a1b;       
   --color-accent-light: #f1cfb0;
-  background-color:#f1cfb0;
+  background-color: #f1cfb0;
+}
+.hero {
+position: relative;
+display: flexbox;
+}
+.hero .text-wrapper {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  padding: 5vh;
 }
 h1 {
   font-family: 'VT323', monospace;
   color:var(--color-font);
   font-weight: 200;
-  font-size: 7rem;
+  font-size: 15rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -113,6 +123,9 @@ h2 {
   margin-left: 6rem;
   margin-right: 6rem;
   text-shadow: 1px 1px #e82929, -1px -1px orangered;
+  display: flexbox;
+  text-align: center;
+  padding: 1vh;
 }
 
 p {
@@ -123,6 +136,23 @@ p {
   margin-left: 5rem;
   margin-right: 5rem;
   text-shadow: 1px 1px #f31b1b;
+  display: flexbox;
+  text-align: center;
+  padding: 1vh;
+}
+h3 {
+  font-family: 'DM Serif Display', serif;
+  color:var(--color-font);
+  font-weight: 200;
+  font-size: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flexbox;
+  text-shadow: 1px 1px #e82929, -1px -1px orange;
+  text-transform: none;
+  text-align: center;
+  padding: 1vh;
+  line-height: 10vh;
 }
 
 .button {
@@ -136,7 +166,8 @@ p {
   color: rgb(0, 0, 6);
   border: 2px solid rgb(0, 0, 1);
   transition: color 1s cubic-bezier(0.25, 1, 0.25, 1),
-    background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
+  background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
+  margin-top: 2vh;
 }
 
 .button::before {
@@ -146,7 +177,7 @@ p {
   background-color: rgb(247, 2, 2);
   transform-origin: top center;
   transform: scaleY(0);
-  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 2.5s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: -1;
 }
 
@@ -160,7 +191,7 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: color 2.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .button:hover span {
@@ -185,24 +216,24 @@ width: 50%;
   animation: none;
 }
 .animation span:nth-child(2n) {
-  color: #f50b02;
+  color: #0233f5;
   text-shadow: textShadow(0.25, 6, #0703f5);
   animation-delay: 0.3s;
 }
 .animation span:nth-child(3n) {
   color: #13ff1f;
-  text-shadow: textShadow(0.25, 6, #0df6b4);
+  text-shadow: textShadow(0.25, 6, #f60d0d);
   animation-delay: 0.15s;
 }
 
 .animation span:nth-child(5n) {
-  color: #7715f7;
+  color: #f71515;
   text-shadow: textShadow(0.25, 6, #E485F8);
   animation-delay: 0.4s;
 }
 
 .animation span:nth-child(7n), .playful span:nth-child(11n) {
-  color: #FF9C55;
+  color: #fa0d0d;
   text-shadow: textShadow(0.25, 6, #FF5555);
   animation-delay: 0.25s;
 }
