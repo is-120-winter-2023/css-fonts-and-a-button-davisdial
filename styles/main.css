@@ -93,7 +93,28 @@ img[src$="svg"] {
   --color-accent: #f36a1b;       
   --color-accent-light: #f1cfb0;
   background-color: #f1cfb0;
+  cursor: url(favicon.ico);
+  cursor: url(images/CURSOR.png);
 }
+.customcursor {
+    cursor: url(styles/CURSOR.png), auto;
+    /* width: 3rem;
+    height: 3rem;
+    position: fixed;
+    opacity: 0;
+     pointer-events: none;
+      mix-blend-mode: difference;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;
+      transition: transform 350ms ease;
+      transform: translate(-50%, -50%) scale(.3);
+      z-index: 1000; */
+    }
+    .custom-cursor--link {
+      transform: translate(-50%, -50%) scale(1);
+    }
 .hero {
 position: relative;
 display: flexbox;
@@ -174,7 +195,7 @@ h3 {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgb(247, 2, 2);
+  background-color: red;
   transform-origin: top center;
   transform: scaleY(0);
   transition: transform 2.5s cubic-bezier(0.19, 1, 0.22, 1);
