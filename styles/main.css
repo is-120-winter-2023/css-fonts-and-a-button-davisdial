@@ -96,6 +96,21 @@ img[src$="svg"] {
   cursor: url(favicon.ico);
   cursor: url(images/CURSOR.png);
 }
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+body {
+  font-family: 'VT323', monospace;
+  color: var(--color-font);
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a[href]:hover {
+  color: var(--color-font);
+}
 .customcursor {
     cursor: url(styles/CURSOR.png), auto;
     /* width: 3rem;
@@ -115,6 +130,17 @@ img[src$="svg"] {
     .custom-cursor--link {
       transform: translate(-50%, -50%) scale(1);
     }
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  background-color: var(--color-secondary);
+}
+
 .hero {
 position: relative;
 display: flexbox;
@@ -150,8 +176,6 @@ h2 {
 }
 
 p {
-  font-family: 'VT323', monospace;
-  color:var(--color-font);
   font-weight: 200;
   font-size: 2rem;
   margin-left: 5rem;
@@ -224,6 +248,10 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 width: 50%;
+}
+
+aside h3 {
+  font-style: italic;
 }
 
 .animation span {
